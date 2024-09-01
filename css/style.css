@@ -1,0 +1,143 @@
+/* Happy Birthday Animation Container */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ff69b4;
+  flex-direction: column;
+  font-family: "Pacifico", cursive, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Animation Container */
+.animation-container {
+  width: 50vw;
+  height: 50vw;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+/* Advanced Text Effects */
+.wave-text {
+  display: inline-block;
+  font-size: 4vw;
+  animation: wave 2s infinite;
+  color: #ff69b4;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+.glow-text {
+  font-size: 3.5vw;
+  color: #ff1493;
+  text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4,
+    0 0 20px #ff69b4;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4,
+      0 0 20px #ff69b4;
+  }
+  to {
+    text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493,
+      0 0 40px #ff1493;
+  }
+}
+
+.bounce-text {
+  font-size: 3.5vw;
+  color: #f39c12;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Wait Text Animation */
+.wait-text {
+  font-size: 3.5vw;
+  color: #ff69b4;
+  animation: blink 1.2s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* Responsive Adjustments */
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .wave-text,
+  .glow-text,
+  .bounce-text,
+  .wait-text {
+    font-size: 6vw;
+  }
+
+  .animation-container {
+    width: 70vw;
+    height: 70vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .wave-text,
+  .glow-text,
+  .bounce-text,
+  .wait-text {
+    font-size: 7vw;
+  }
+
+  .animation-container {
+    width: 60vw;
+    height: 60vw;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .wave-text {
+    font-size: 2.5rem;
+  }
+
+  .glow-text,
+  .bounce-text,
+  .wait-text {
+    font-size: 2rem;
+  }
+
+  .animation-container {
+    width: 20vw;
+    height: 20vw;
+    max-width: 400px;
+    max-height: 400px;
+  }
+}

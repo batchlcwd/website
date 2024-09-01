@@ -11,6 +11,7 @@
     />
     <!-- Lottie Web Player CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
     <style>
       /* Fancy Confetti Background */
       body {
@@ -36,89 +37,6 @@
         }
         100% {
           transform: translateY(110vh) rotate(360deg);
-        }
-      }
-
-      /* Happy Birthday Animation Container */
-      .loading {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        color: #ff69b4;
-        flex-direction: column;
-        font-family: "Pacifico", cursive, sans-serif;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        position: relative;
-        z-index: 2;
-      }
-
-      /* Advanced Text Effects */
-      .wave-text {
-        display: inline-block;
-        font-size: 3rem;
-        animation: wave 2s infinite;
-        color: #ff69b4;
-      }
-
-      @keyframes wave {
-        0%,
-        100% {
-          transform: rotate(0deg);
-        }
-        50% {
-          transform: rotate(10deg);
-        }
-      }
-
-      .glow-text {
-        font-size: 2.5rem;
-        color: #ff1493;
-        text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4,
-          0 0 20px #ff69b4;
-        animation: glow 1.5s ease-in-out infinite alternate;
-      }
-
-      @keyframes glow {
-        from {
-          text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4,
-            0 0 20px #ff69b4;
-        }
-        to {
-          text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493,
-            0 0 40px #ff1493;
-        }
-      }
-
-      .bounce-text {
-        font-size: 2.5rem;
-        color: #f39c12;
-        animation: bounce 2s infinite;
-      }
-
-      @keyframes bounce {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-10px);
-        }
-      }
-
-      /* Wait Text Animation */
-      .wait-text {
-        font-size: 2.5rem;
-        color: #ff69b4;
-        animation: blink 1.2s infinite alternate;
-      }
-
-      @keyframes blink {
-        0% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0.3;
         }
       }
 
@@ -161,7 +79,10 @@
     </div>
     <!-- Page loading animation -->
     <div id="loading" class="loading">
-      <div id="lottie-animation" style="width: 300px; height: 300px"></div>
+      <div
+        id="lottie-animation"
+        style="width: 80vw; height: 80vw; max-width: 300px; max-height: 300px"
+      ></div>
       <h2 class="wave-text mt-4">🎉 Happy Birthday !! 🎉</h2>
       <p class="glow-text mt-2">
         Wishing you a royal day filled with joy and grandeur! 👑
