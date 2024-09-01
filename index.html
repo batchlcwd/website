@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Happy Birthday Celebration with Animated Text</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Lottie Web Player CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <style>
+      /* Fancy Confetti Background */
+      body {
+        background-color: #1a202c;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .confetti {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #ffeb3b;
+        top: -10px;
+        animation: fall linear infinite;
+        opacity: 0.7;
+        z-index: 1;
+      }
+
+      @keyframes fall {
+        0% {
+          transform: translateY(-10px) rotate(0deg);
+        }
+        100% {
+          transform: translateY(110vh) rotate(360deg);
+        }
+      }
+
+      /* Happy Birthday Animation Container */
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #ff69b4;
+        flex-direction: column;
+        font-family: "Pacifico", cursive, sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        position: relative;
+        z-index: 2;
+      }
+
+      /* Advanced Text Effects */
+      .wave-text {
+        display: inline-block;
+        font-size: 3rem;
+        animation: wave 2s infinite;
+        color: #ff69b4;
+      }
+
+      @keyframes wave {
+        0%,
+        100% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(10deg);
+        }
+      }
+
+      .glow-text {
+        font-size: 2.5rem;
+        color: #ff1493;
+        text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4,
+          0 0 20px #ff69b4;
+        animation: glow 1.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4,
+            0 0 20px #ff69b4;
+        }
+        to {
+          text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493,
+            0 0 40px #ff1493;
+        }
+      }
+
+      .bounce-text {
+        font-size: 2.5rem;
+        color: #f39c12;
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      /* Wait Text Animation */
+      .wait-text {
+        font-size: 2.5rem;
+        color: #ff69b4;
+        animation: blink 1.2s infinite alternate;
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.3;
+        }
+      }
+
+      /* Fade-in Effect for Sections */
+      .fade-in {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+
+      .visible {
+        opacity: 1;
+      }
+
+      /* Hide all sections except the first one */
+      .hidden {
+        display: none;
+      }
+      /* Basic styles for message */
+      .mobile-disabled-message {
+        display: none;
+        text-align: center;
+        color: white;
+        background-color: red;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        font-size: 1.5rem;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body class="text-white dark">
+    <div id="mobile-message" class="mobile-disabled-message">
+      This website is not available on mobile devices.
+    </div>
+    <!-- Page loading animation -->
+    <div id="loading" class="loading">
+      <div id="lottie-animation" style="width: 300px; height: 300px"></div>
+      <h2 class="wave-text mt-4">🎉 Happy Birthday !! 🎉</h2>
+      <p class="glow-text mt-2">
+        Wishing you a royal day filled with joy and grandeur! 👑
+      </p>
+      <p class="bounce-text mt-4">
+        Enjoy every moment of your special day! 🎂🎈
+      </p>
+      <p class="wait-text mt-4">Wait....</p>
+    </div>
+
+    <!-- Confetti Background Elements -->
+    <div
+      class="confetti"
+      style="left: 10%; animation-duration: 3s; background-color: #ff8c00"
+    ></div>
+    <div
+      class="confetti"
+      style="left: 25%; animation-duration: 4s; background-color: #ff1493"
+    ></div>
+    <div
+      class="confetti"
+      style="left: 40%; animation-duration: 2.5s; background-color: #32cd32"
+    ></div>
+    <div
+      class="confetti"
+      style="left: 55%; animation-duration: 3.5s; background-color: #1e90ff"
+    ></div>
+    <div
+      class="confetti"
+      style="left: 70%; animation-duration: 4.2s; background-color: #ffff00"
+    ></div>
+    <div
+      class="confetti"
+      style="left: 85%; animation-duration: 2.8s; background-color: #ff4500"
+    ></div>
+
+    <!-- Dynamic Sections will be added here -->
+    <div id="content-container"></div>
+
+    <script src="js/init.js"></script>
+    <script src="js/init1.js"></script>
+  </body>
+</html>

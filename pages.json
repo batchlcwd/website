@@ -1,0 +1,32 @@
+{
+    "pages": [
+      {
+        "id": "section-1",
+        "title": "Page 1",
+        "content": "<h1  class='text-5xl'>This is the content of Page 1.</h1>"
+       
+      },
+      {
+        "id": "section-2",
+        "title": "Page 2",
+        "content": "This is the content of Page 2.",
+        "template":"page4.html"
+      },
+      {
+        "id": "section-3",
+        "title": "Page 3",
+        "content": "This is the content of Page 3."
+      },
+      {
+        "id": "section-4",
+        "title": "Page 4",
+        "content": "This is the content of Page 3."
+      },
+      {
+        "id": "section-5",
+        "title": "Page 5",
+        "content": "This is the content of Page 3."
+      }
+    ]
+  }
+  
