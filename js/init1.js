@@ -11,7 +11,7 @@ function disableOnMobile() {
     document.getElementById("mobile-message").style.display = "block"; // Show message
     document.getElementById("website-content").style.display = "none"; // Hide content
   } else {
-    enterFullScreen(); // Automatically enter full-screen mode on desktop
+    // enterFullScreen(); // Automatically enter full-screen mode on desktop
   }
 }
 
