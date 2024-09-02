@@ -1,4 +1,3 @@
-
 // Initialize Lottie Animation with "Queen Birthday" theme
 var animation = lottie.loadAnimation({
   container: document.getElementById("lottie-animation"), // the DOM element
@@ -18,7 +17,7 @@ function loadPagesFromJson() {
           const section = document.createElement("div");
           section.id = page.id;
           section.className =
-            "section bg-gray-800  min-h-screen flex flex-col justify-center items-center fade-in hidden";
+            "section bg-gray-800  h-screen flex flex-col justify-center items-center fade-in hidden";
 
           if (page.template) {
             // Fetch the external HTML template
