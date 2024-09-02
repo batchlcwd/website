@@ -15,19 +15,16 @@
       },
       {
         "id": "section-3",
-        "title": "Page 3",
-        "content": "This is the content of Page 3."
-      },
-      {
-        "id": "section-4",
-        "title": "Page 4",
-        "content": "This is the content of Page 3."
-      },
-      {
-        "id": "section-5",
-        "title": "Page 5",
-        "content": "This is the content of Page 3."
+        "title": "Home",
+        "subtitle":"Starting Point",
+        "description":"W'll start on <b> 10/09/2024 </b> in morning.",
+        "image":"images/s4.jpg",
+        "background":"images/j3.jpg",
+        "footer":"💐  💐  💐  💐",
+        "buttonText":"Thankyou"
+      
       }
+   
     ]
   }
   

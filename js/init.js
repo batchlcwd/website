@@ -29,13 +29,67 @@ function loadPagesFromJson() {
               });
           } else {
             // Use the default template
-            section.innerHTML = `
-              <h1 class="text-3xl font-bold mb-4">${page.title}</h1>
-              <p class="mb-8">${page.content}</p>
-              <button class=" button${
-                index + 1
-              } bg-yellow-500 text-gray-900 px-6 py-2 rounded">Click Here Go Next..</button>
-            `;
+            // section.innerHTML = `
+            //   <h1 class="text-3xl font-bold mb-4">${page.title}</h1>
+            //   <p class="mb-8">${page.content}</p>
+            //   <button class=" button${
+            //     index + 1
+            //   } bg-yellow-500 text-gray-900 px-6 py-2 rounded">Click Here Go Next..</button>
+            // `;
+
+            section.innerHTML = `        
+    <div class="h-screen w-screen md:p-0 px-2 bg-gray-900 flex items-center justify-center ">
+        
+          <div class="w-full h-full bg-gray-800 overflow-hidden relative flex flex-col items-center justify-center">
+              <!-- Jaipur Image Background -->
+              <div class="absolute w-full h-full">
+                <img
+                  src="${page.background ? page.background : "images/j1.jpg"}"
+                  alt="Jaipur City"
+                  class="w-full h-full object-cover opacity-50"
+                />
+              </div>
+
+
+
+          <div class="relative z-10 text-center text-white px-6 py-8 bg-gray-800 bg-opacity-70 rounded-lg">
+
+            <span class="material-symbols-outlined text-5xl">
+               location_on
+             </span>
+            
+              <h1 class="text-4xl font-bold mb-2 ">${page.title}</h1>
+
+             
+              <h2 class="text-2xl mb-4 ">${page.subtitle}</h2>
+
+         
+              <p class="text-lg mb-6 ">${page.description}</p>
+
+      
+              <div class="mb-6">
+                  <img src="${
+                    page.image
+                  }" alt="Location Image" class="w-96 rounded-lg shadow-md">
+              </div>
+
+           
+              <div class="text-md mb-4">
+                 ${page.footer ? page.footer : ""}
+              </div>
+
+                 <a
+        href="#"
+        class=" button${
+          index + 1
+        } bg-purple-600 text-white px-6 py-3 rounded-full font-bold shadow-lg transform hover:scale-105 transition-transform duration-300 hover:bg-purple-700 animate-bounce delay-1000"
+        >${page.buttonText}</a>
+          </div>
+
+          </div>
+
+     </div>`;
+
             resolve(section);
           }
         });
