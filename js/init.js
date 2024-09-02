@@ -1,5 +1,4 @@
 
-
 // Initialize Lottie Animation with "Queen Birthday" theme
 var animation = lottie.loadAnimation({
   container: document.getElementById("lottie-animation"), // the DOM element
@@ -19,7 +18,7 @@ function loadPagesFromJson() {
           const section = document.createElement("div");
           section.id = page.id;
           section.className =
-            "section bg-gray-800 p-8 min-h-screen flex flex-col justify-center items-center fade-in hidden";
+            "section bg-gray-800  min-h-screen flex flex-col justify-center items-center fade-in hidden";
 
           if (page.template) {
             // Fetch the external HTML template
@@ -63,10 +62,7 @@ function addNavigationEventListeners() {
     if (button) {
       button.addEventListener("click", () => {
         const nextIndex = (index + 1) % sections.length;
-        showLoaderAndNextSection(
-          sections[index].id,
-          sections[nextIndex].id
-        );
+        showLoaderAndNextSection(sections[index].id, sections[nextIndex].id);
       });
     }
   });

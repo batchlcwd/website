@@ -1,3 +1,6 @@
+body {
+  cursor: url("../images/cur.gif"), auto;
+}
 /* Happy Birthday Animation Container */
 .loading {
   display: flex;
@@ -140,4 +143,35 @@
     max-width: 400px;
     max-height: 400px;
   }
+}
+
+/* pages animations */
+/* Fade-In Animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fade-in 1.5s ease-out forwards;
+}
+
+/* Slide-In Animation */
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-slide-in {
+  animation: slide-in 1.5s ease-out forwards;
 }
