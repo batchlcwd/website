@@ -38,36 +38,38 @@ function loadPagesFromJson() {
             // `;
 
             section.innerHTML = `        
-    <div class="h-screen w-screen md:p-0 px-2 bg-gray-900 flex items-center justify-center ">
+    <div class="h-screen  w-screen md:p-0 px-2 bg-gray-900 flex items-center justify-center  ">
         
-          <div class="w-full h-full bg-gray-800 overflow-hidden relative flex flex-col items-center justify-center">
+          <div class="w-full   h-full bg-gray-800  relative flex flex-col items-center justify-center">
               <!-- Jaipur Image Background -->
               <div class="absolute w-full h-full">
                 <img
                   src="${page.background ? page.background : "images/j1.jpg"}"
-                  alt="Jaipur City"
+                 
                   class="w-full h-full object-cover opacity-50"
                 />
               </div>
 
 
 
-          <div class="relative z-10 text-center text-white px-6 py-8 bg-gray-800 bg-opacity-70 rounded-lg">
+          <div class="relative z-10 text-center text-white px-6 py-8 bg-gray-800 bg-opacity-70 ">
 
-            <span class="material-symbols-outlined text-5xl">
+            <span class="material-symbols-outlined text-3xl xl:text-5xl">
                location_on
              </span>
             
-              <h1 class="text-4xl font-bold mb-2 ">${page.title}</h1>
+              <h1 class=" text-2xl lg:text-4xl font-bold mb-2 ">${
+                page.title
+              }</h1>
 
              
-              <h2 class="text-2xl mb-4 ">${page.subtitle}</h2>
+              <h2 class="text-xl lg:text-2xl mb-4 ">${page.subtitle}</h2>
 
          
               <p class="text-lg mb-6 ">${page.description}</p>
 
       
-              <div class="mb-6 flex justify-center text-center">
+              <div class="mb-6  flex justify-center text-center">
                   <img src="${
                     page.image
                   }" alt="Location Image" class="w-96 rounded-lg shadow-md">
