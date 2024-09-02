@@ -7,6 +7,14 @@ var animation = lottie.loadAnimation({
   path: "lottie/b2.json", // Example URL, replace with the Lottie animation JSON URL of a "Queen Birthday" theme
 });
 
+// Create an audio element
+const audio = new Audio("images/song.mp3"); // Replace with your audio file path
+
+// Set the audio to loop
+audio.loop = true;
+
+// Play the audio when the page loads
+
 // Function to dynamically load pages from JSON
 function loadPagesFromJson() {
   fetch("pages.json") // Fetch the JSON file
@@ -116,6 +124,9 @@ function addNavigationEventListeners() {
     const button = section.querySelector(".button" + (index + 1));
     if (button) {
       button.addEventListener("click", () => {
+        if (audio.paused) {
+          audio.play();
+        }
         const nextIndex = (index + 1) % sections.length;
         showLoaderAndNextSection(sections[index].id, sections[nextIndex].id);
       });
