@@ -21,10 +21,128 @@
         "image":"images/s4.JPG",
         "background":"images/j3.jpg",
         "footer":"💐  💐  💐  💐",
-        "buttonText":"Thankyou"
+        "buttonText":"Continue"
       
-      }
-   
+      },  {
+        "id": "section-4",
+        "title": "Day 1: Departure from Lucknow to Jaipur via Delhi",
+        "subtitle": "Train Journey Begins",
+        "description": "Your journey starts on <b>10/09/2024</b> with a train from Lucknow to Jaipur via Delhi. Enjoy a comfortable ride and scenic views along the way.",
+        "image": "images/s4.webp",
+        "background": "images/train_bg.jpg",
+        "footer": "🚆 Relax and Enjoy the Journey! 🚆",
+        "buttonText": "Next",
+        "time": "Departure: Morning, Arrival: Night",
+        "focus": "Travel and Relaxation"
+      },
+      {
+        "id": "section-5",
+        "title": "Night Stay at Hotel",
+        "subtitle": "Arrival and Check-in",
+        "description": "Arrive in Jaipur at night and check into <b>Hotel Jaipur Palace</b> for a restful night before starting your exploration on <b>11/09/2024</b>.",
+        "image": "images/hotel.jpg",
+        "background": "images/hotel_bg.jpg",
+        "footer": "🛏️ Refresh and Rejuvenate! 🛏️",
+        "buttonText": "Start Exploring",
+        "time": "Check-in: Night",
+        "focus": "Rest and Relaxation"
+      },
+      {
+        "id": "section-6",
+        "title": "Day 2: Explore Historic Monuments",
+        "subtitle": "Start Your Adventure",
+        "description": "Begin your exploration on <b>11/09/2024</b> in the morning. Visit Jaipur's historic monuments and local delights.",
+        "image": "images/day1.jpg",
+        "background": "images/j1.jpg",
+        "footer": "✨ Enjoy the royal history of Jaipur! ✨",
+        "buttonText": "Next",
+        "time": "Start: 9:00 AM",
+        "focus": "History and Culture"
+      },
+      {
+        "id": "section-7",
+        "title": "Morning - Hawa Mahal and Jantar Mantar",
+        "subtitle": "Discover Iconic Landmarks",
+        "description": "Visit <b>Hawa Mahal</b> (9:30 AM - 10:30 AM) for a unique architectural experience and explore the ancient observatory <b>Jantar Mantar</b> (11:00 AM - 12:00 PM).",
+        "image": "images/hawa_mahal.jpg",
+        "background": "images/jantar_mantar.jpg",
+        "footer": "🏰 History and Astronomy Await! 🏰",
+        "buttonText": "Continue",
+        "time": "Morning: 9:30 AM - 12:00 PM",
+        "focus": "Architecture and Astronomy"
+      },
+      {
+        "id": "section-8",
+        "title": "Mid-Morning - City Palace",
+        "subtitle": "Royal Grandeur",
+        "description": "Head to the <b>City Palace</b> (12:30 PM - 2:00 PM) and explore its museums, courtyards, and stunning architecture.",
+        "image": "images/city_palace.jpg",
+        "background": "images/j2.jpg",
+        "footer": "🏯 Feel the Royalty of Jaipur! 🏯",
+        "buttonText": "Explore More",
+        "time": "Mid-Morning: 12:30 PM - 2:00 PM",
+        "focus": "Royal Heritage"
+      },
+      {
+        "id": "section-9",
+        "title": "Afternoon - Govind Dev Mandir and Bapu Bazaar",
+        "subtitle": "Spiritual and Local Flavors",
+        "description": "Visit <b>Govind Dev Mandir</b> (2:30 PM - 3:00 PM) for spiritual solace and enjoy some shopping and street food at <b>Bapu Bazaar</b> (3:30 PM - 5:00 PM).",
+        "image": "images/bapu_bazaar.jpg",
+        "background": "images/temple.jpg",
+        "footer": "🛍️ Shop and Snack like a Local! 🛍️",
+        "buttonText": "Next Stop",
+        "time": "Afternoon: 2:30 PM - 5:00 PM",
+        "focus": "Spirituality and Shopping"
+      },
+      {
+        "id": "section-10",
+        "title": "Evening - Sardar ki Lassi, Shriram Chaat, and Masala Chawk",
+        "subtitle": "Food Adventure",
+        "description": "End your day with a glass of lassi at <b>Sardar ki Lassi</b> (5:30 PM - 6:00 PM) and try delicious street food at <b>Masala Chawk</b> (6:30 PM - 8:00 PM).",
+        "image": "images/masala_chawk.jpg",
+        "background": "images/food.jpg",
+        "footer": "🍹 Taste the Flavors of Jaipur! 🍢",
+        "buttonText": "End of Day 2",
+        "time": "Evening: 5:30 PM - 8:00 PM",
+        "focus": "Local Cuisine"
+      },
+      {
+        "id": "section-11",
+        "title": "Day 3: Museums, Temples, and Cultural Sites",
+        "subtitle": "Explore More of Jaipur",
+        "description": "Continue your exploration on <b>12/09/2024</b> by visiting <b>Albert Hall Museum</b> (9:00 AM - 10:30 AM), followed by the <b>Zoo</b> (11:00 AM - 12:30 PM) and the serene <b>Birla Mandir</b> (1:00 PM - 2:00 PM).",
+        "image": "images/albert_hall.jpg",
+        "background": "images/j3.jpg",
+        "footer": "🕍 Discover Art and Culture! 🕍",
+        "buttonText": "Onwards",
+        "time": "Full Day: 9:00 AM - 2:00 PM",
+        "focus": "Museums and Temples"
+      },
+      {
+        "id": "section-12",
+        "title": "Day 4: Forts and Modern Attractions",
+        "subtitle": "Explore the Majestic Forts",
+        "description": "Begin your final day on <b>13/09/2024</b> with a visit to the <b>Jal Mahal</b> (9:00 AM - 9:30 AM) and continue to the famous forts: <b>Amer Fort</b> (10:00 AM - 12:00 PM), <b>Jaigarh Fort</b> (12:30 PM - 2:00 PM), and <b>Nahargarh Fort</b> (2:30 PM - 4:00 PM).",
+        "image": "images/amer_fort.jpg",
+        "background": "images/j4.jpg",
+        "footer": "🏰 Forts and Views Await! 🏰",
+        "buttonText": "Final Day",
+        "time": "Full Day: 9:00 AM - 4:00 PM",
+        "focus": "Historical Forts"
+      },
+      {
+        "id": "section-13",
+        "title": "Evening - World Trade Park and Pink City",
+        "subtitle": "Modern Jaipur",
+        "description": "Conclude your trip by visiting the <b>World Trade Park</b> (5:00 PM - 7:00 PM) for shopping and enjoy the vibrant streets of the <b>Pink City</b> at night (7:30 PM onwards).",
+        "image": "images/world_trade_park.jpg",
+        "background": "images/pink_city.jpg",
+        "footer": "🌆 Embrace the Urban Vibe! 🌆",
+        "buttonText": "End of Trip",
+        "time": "Evening: 5:00 PM onwards",
+        "focus": "Shopping and Nightlife"
+      }    
     ]
   }
   

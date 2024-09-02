@@ -67,7 +67,7 @@ function loadPagesFromJson() {
               <p class="text-lg mb-6 ">${page.description}</p>
 
       
-              <div class="mb-6">
+              <div class="mb-6 flex justify-center text-center">
                   <img src="${
                     page.image
                   }" alt="Location Image" class="w-96 rounded-lg shadow-md">
